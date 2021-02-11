@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
 })
 export class YelpComponent implements OnInit {
 
-
   resultList: any;
   httpOptions = {
     headers: new HttpHeaders({
