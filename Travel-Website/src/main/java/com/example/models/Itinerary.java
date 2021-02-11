@@ -1,5 +1,6 @@
 package com.example.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -26,7 +27,7 @@ public class Itinerary {
 	private String title;
 	
 	@OneToMany(mappedBy="itinerary")
-	private List<Event> events;
+	private List<Event> events = new ArrayList<>();
 	
 	public Itinerary() {
 		// TODO Auto-generated constructor stub
