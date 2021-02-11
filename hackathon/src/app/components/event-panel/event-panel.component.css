@@ -1,0 +1,25 @@
+.event {
+  border: 1px solid black;
+  width: 300px;
+  height: 350px;
+  overflow: none;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.card-body {
+  padding: 0 20px 20px 20px;
+  text-align: center;
+}
+
+.title {
+  max-width: 300px;
+  overflow: none;
+  margin-bottom: 10px;
+}
+
+.image {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
