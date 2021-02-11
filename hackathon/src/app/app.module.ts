@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { YelpComponent } from './component/yelp/yelp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    YelpComponent
   ],
   imports: [
     BrowserModule,
