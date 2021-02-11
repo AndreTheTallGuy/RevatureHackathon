@@ -7,6 +7,7 @@ import { TicketmasterComponent } from './components/ticketmaster/ticketmaster.co
 import { EventService } from './event-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EventPanelComponent } from './components/event-panel/event-panel.component';
+import { ItineraryService } from './itinerary.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { EventPanelComponent } from './components/event-panel/event-panel.compon
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [EventService],
+  providers: [EventService, ItineraryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
