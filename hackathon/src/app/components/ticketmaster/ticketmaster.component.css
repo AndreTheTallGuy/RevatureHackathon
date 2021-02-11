@@ -3,3 +3,12 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.itinerary {
+  border-radius: 15px;
+  background-color: rgb(91, 200, 204);
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+}

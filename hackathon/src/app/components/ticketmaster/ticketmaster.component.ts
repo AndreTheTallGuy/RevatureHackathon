@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from 'app/event-service.service';
+import { ItineraryService } from 'app/itinerary.service';
 
 @Component({
   selector: 'app-ticketmaster',
@@ -10,7 +11,7 @@ export class TicketmasterComponent implements OnInit {
 
   events?: any;
 
-  constructor(private event: EventService) { }
+  constructor(private event: EventService, private itinerary: ItineraryService) { }
 
 
 
@@ -19,6 +20,13 @@ export class TicketmasterComponent implements OnInit {
        console.log(res);
        this.events = res._embedded.events;
      })
+  }
+
+  onSubmit(){
+    this.itinerary.saveItinerary().subscribe(res => {
+      console.log(res);
+      
+    })
   }
 
 }
